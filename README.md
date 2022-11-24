@@ -175,10 +175,10 @@ In order to facilitate the project usage, were created a Python script that will
 
 ## 7. How to Use this Project
 In order to use this project, You need to execute these steps:
-1. Create a Python virtual environment with Python 3.10
-2. Install all packages and libraries inside `requirements.txt` using the `pip install -r requirements.txt`
-3. Replace the CSV file that is inside `data/test/` directory with the file that have the data You want to classify. The CSV file **MUST** have the `abandono_teste.csv` name.
-4. The CSV with the classificated clients will be placed inside the `data/answer/` directory, under the name `abandonos_{date}.csv`, where `date` will be the date of the execution.
+1. Create a Python virtual environment with Python's version 3.10
+2. Install all packages and libraries inside `requirements.txt` using the `pip install -r requirements.txt` command
+3. Replace the CSV file that is inside `data/test/` directory with the file that have the data You want to classify. The CSV file **MUST** have exactly the `abandono_teste.csv` name.
+4. The CSV file with the classified clients will be placed inside the `data/answer/` directory, under the name `abandonos_{date}.csv`, where `{date}` will be the date of the execution.
 
 
 ## 8. Next Steps
