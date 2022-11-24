@@ -148,7 +148,7 @@ For the categorical features, were used One Hot Encoding, to encode the `geograp
 ## 6. Machine Learning Model and Fine Tunning
 ### 6.1. Finding the Best Model and Hyperparameters
 In order to find the best machine learning model and its hyperparameters, the Grid Search CV object were used with 4 Machine Learning Models:
-* Linear Regression
+* Logistic Regression
 * Support Vector Classification (SVC)
 * Random Forest
 * XGBoost
