@@ -13,7 +13,7 @@ def load_pipeline(pipeline):
 
 
 def predict_churn(dataframe, pipeline):
-    dataframe["Exited"] = pipeline.predict(dataframe)
+    dataframe["predictedValues"] = pipeline.predict(dataframe)
 
     return dataframe
 
@@ -21,7 +21,7 @@ def predict_churn(dataframe, pipeline):
 def export_predictions(dataframe):
     date = datetime.now().date().strftime("%Y%m%d")
 
-    dataframe.loc[:, ["RowNumber", "Exited"]].to_csv(
+    dataframe.loc[:, ["RowNumber", "predictedValues"]].to_csv(
         f"./data/answer/abandonos_{date}.csv", index=False
     )
 
